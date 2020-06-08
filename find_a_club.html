@@ -13,18 +13,18 @@
   <body>
 		<!--grid-->
 	<div class="w3-row">
-	  <div class="w3-col m1 w3-center w3-grey">1</div>
-	  <div class="w3-col m1 w3-center w3-white">2</div>
-	  <div class="w3-col m1 w3-center w3-grey">3</div>
-	  <div class="w3-col m1 w3-center w3-white">4</div>
-	  <div class="w3-col m1 w3-center w3-grey">5</div>
-	  <div class="w3-col m1 w3-center w3-white">6</div>
-	  <div class="w3-col m1 w3-center w3-grey">7</div>
-	  <div class="w3-col m1 w3-center w3-white">8</div>
-	  <div class="w3-col m1 w3-center w3-grey">9</div>
-	  <div class="w3-col m1 w3-center w3-white">10</div>
-	  <div class="w3-col m1 w3-center w3-grey">11</div>
-	  <div class="w3-col m1 w3-center w3-white ">12</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">1</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">2</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">3</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">4</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">5</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">6</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">7</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">8</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">9</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">10</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">11</div>
+	  <div class="w3-col m1 s1 w3-center w3-white ">12</div>
 	</div><!--close grid-->
 	
 	<!--Top Image-->  
@@ -33,28 +33,30 @@
 			</div><!--Close Image-->
 	<!--Close Top Image-->
 	
-	<!--Nav-Bar-->
-			<ul>
+	<!--Nav-Bar-Large-->
+			<ul class = "bar">
 			  <li><a href="index.html">Home</a></li>
 			   <li class="dropdown">
-				<a href="javascript:void(0)" class="dropbtn">Profile</a>
+				<a href="javascript:void(0)">Profile</a>
 				<div class="dropdown-content">
 					<a href="profile.html">Profile</a>
 					<a href="login.html">Log In/Sign up</a>
 			    </div><!--Close Profile-->
+				</li>
 			  <li class="dropdown">
-				<a href="javascript:void(0)" class="dropbtn">Events</a>
+				<a href="javascript:void(0)">Events</a>
 				<div class="dropdown-content">
 					<a href="upcoming_events.html">Upcoming Events</a>
 					<a href="results.html">Results</a>
 					<a href="enter_event.html">Enter an Event</a>
 					<a href="">Search Register</a>
 			    </div><!--Close Events-->
+				</li>
 			  <li><a href="find_a_club.html" class = "active">Find a Club</a></li>
 			  <li><a href="judges.html">Judges</a></li>
 			  <li><a href="NZDAC.html">NZDAC</a></li>
 			  <li class="dropdown">
-				<a href="javascript:void(0)" class="dropbtn">Other</a>
+				<a href="javascript:void(0)" >Other</a>
 				<div class="dropdown-content">
 					<a href="info.html">Info for Beginners</a>
 					<a href="">Info for Clubs</a>
@@ -62,15 +64,146 @@
 					<a href="">Measuring</a>
 					<a href="">Awards</a>
 					<a href="">Courses</a>
-					
 			    </div><!--Close Other-->
+				</li>
 			  <li><a href="help_contact.html">Help/Contact</a></li>			 
 			</ul> <!--Close Nav Bar-->
 		<!--Close Nav-Bar-->
+		
+		<!--Nav-Bar-Mobile--->
+			<ul class="navbar menu">
+			  <div class="dropdown">
+				  <button class="dropbtn" onclick="myFunction()">
+					<img src="Images/menu.png" alt="Menu" height="" width="40px">
+				  </button>
+				  <div class="mobile-dropdown-content" id="myDropdown">
+					<a href="index.html">Home</a>
+				  <div class="dropdown">
+						<a style = "padding-left:10px;">
+						  <button class="dropbtn-2" onclick="myFunctionProfile()">
+							Profile
+						  </button>
+						</a>
+					  <div class="mobile-dropdown-content-2" id="myDropdownProfile">
+						<a href="profile.html">Profile</a>
+						<a href="login.html">Login/Sign Up</a>
+					  </div>
+				  </div> 
+				  
+				  <div class="dropdown">
+						<a style = "padding-left:10px;">
+						  <button class="dropbtn-2" onclick="myFunctionEvents()">
+							Events
+						  </button>
+						</a>
+					  <div class="mobile-dropdown-content-2" id="myDropdownEvents">
+						<a href="upcoming_events.html">Upcoming Events</a>
+						<a href="results.html">Results</a>
+						<a href="enter_event.html">Enter an Event</a>
+						<a href="#">Search Register</a>
+					  </div>
+				  </div>
+					<a href="NZDAC.html">NZDAC</a>
+					<a href="judges.html">Judges</a>
+					<a class = "active-dropdown" href="find_a_club.html">Find a Club</a>
+					
+					<div class="dropdown">
+						<a style = "padding-left:10px;">
+						  <button class="dropbtn-2" onclick="myFunctionOther()">
+							Other
+						  </button>
+						</a>
+					  <div class="mobile-dropdown-content-2" id="myDropdownOther">
+						<a href="info.html">Info for Beginners</a>
+						<a href="#">Info for Clubs</a>
+						<a href="#">Regulations</a>
+						<a href="measuring.html">Measuring</a>
+						<a href="#">Awards</a>
+						<a href="#">Courses</a>
+					  </div>
+				  </div>					
+					<a href="help_contact.html">Help/Contact</a>
+				  </div>
+			  </div> 
+			</ul>
+		<!--Close Nav-Bar-->
 	
 	<h1 class = "title"> Find A Club </h1><!-- Title -->
+	<div class = "w3-row">
+		<p class = "w3-col m4"> Enter club name:</p>
+		<input id="w3review" name="w3review"></input>
+	</div><!-- Close Row-->
+	<div class = "table">
+	 <table class="events not-mobile">
+  <tr>
+    <th>Club Name</th>
+    <th>Contact</th>
+    <th>Map</th>
+  </tr>
+  <tr>
+    <td>Akarana Dog Training Club<br><br>Helen McGrinde</td>
+    <td>Email: secakaranadtc@gmail.com<br>
+		Web: <a class = "link" href = "http://www.akaranadogtrainingclub.co.nz/">www.akaranadogtrainingclub.co.nz</a><br>
+		Phone:<br>
+		Address:
+	 </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Auckland Canine Agility Club<br><br> Sara Hayton</td>
+    <td>Email: acacdogs1991@gmail.com<br>
+		Web:<a class = "link" href = "http://www.sportsground.co.nz/acac/www.sportsground.co.nz/acac/">www.sportsground.co.nz/acac/ </a><br>
+		Phone:021338214<br>
+		Address:PO Box 13-662 Onehunga
+		</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Blenheim Canine Training Club<br><br>Jennifer Everest</td>
+    <td>Email: blenheimcaninetrainingclub@gmail.com<br>
+		Web:<a class = "link" href ="https://blenheimcaninetraining.co.nz/">blenheimcaninetraining.co.nz</a><br>
+		Phone:03 5777 836 and 021<br>
+		Address: A&P Showgrounds, Maxwell Road</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Cambridge Dog Obedience Club<br><br>Janette Davis</td>
+    <td>Email: cdocdogs@gmail.com<br>
+		Web: <a class = "link" href ="https://cambridgedogclub.co.nz/">www.cambridgedogclub.co.nz</a><br>
+		Phone:027 578 5914<br>
+		Address:PO Box 406, Cambridge</td>
+    <td></td>
+  </tr>
+  </table>
+</div>		
 		
-		
+				<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionProfile() {
+  document.getElementById("myDropdownProfile").classList.toggle("show");
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionEvents() {
+  document.getElementById("myDropdownEvents").classList.toggle("show");
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionOther() {
+  document.getElementById("myDropdownOther").classList.toggle("show");
+}
+
+
+</script>
   </body>
   
 </html>

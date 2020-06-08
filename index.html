@@ -51,7 +51,7 @@
 					<a href="enter_event.html">Enter an Event</a>
 					<a href="">Search Register</a>
 			    </div><!--Close Events-->
-				</li>
+			  </li>
 			  <li><a href="find_a_club.html">Find a Club</a></li>
 			  <li><a href="judges.html">Judges</a></li>
 			  <li><a href="NZDAC.html">NZDAC</a></li>
@@ -61,36 +61,74 @@
 					<a href="info.html">Info for Beginners</a>
 					<a href="">Info for Clubs</a>
 					<a href="">Regulations</a>
-					<a href="">Measuring</a>
+					<a href="measuring.html">Measuring</a>
 					<a href="">Awards</a>
 					<a href="">Courses</a>
 			    </div><!--Close Other-->
 				</li>
-			  <li><a href="help_contact.html">Help/Contact</a></li>			 
+			  <li><a href="help_contact.html">Help/Contact</a></li>			  
 			</ul> <!--Close Nav Bar-->
 		<!--Close Nav-Bar-->
 		
-		<!--Nav-Bar--->
-			<div class="navbar menu">
+		<!--Nav-Bar-Mobile--->
+			<ul class="navbar menu">
 			  <div class="dropdown">
 				  <button class="dropbtn" onclick="myFunction()">
 					<img src="Images/menu.png" alt="Menu" height="" width="40px">
 				  </button>
 				  <div class="mobile-dropdown-content" id="myDropdown">
-					<a href="#">Home</a>
-					<a href="#">Profile</a>
-					<a href="#">Events</a>
-					<a href="#">NZDAC</a>
-					<a href="#">Judges</a>
-					<a href="#">Find a Club</a>
-					<a href="#">Other</a>
-					<a href="#">Help/Contact</a>
+					<a class = "active-dropdown"href="#">Home</a>
+				  <div class="dropdown">
+						<a style = "padding-left:10px;">
+						  <button class="dropbtn-2" onclick="myFunctionProfile()">
+							Profile
+						  </button>
+						</a>
+					  <div class="mobile-dropdown-content-2" id="myDropdownProfile">
+						<a href="profile.html">Profile</a>
+						<a href="login.html">Login/Sign Up</a>
+					  </div>
+				  </div> 
+				  
+				  <div class="dropdown">
+						<a style = "padding-left:10px;">
+						  <button class="dropbtn-2" onclick="myFunctionEvents()">
+							Events
+						  </button>
+						</a>
+					  <div class="mobile-dropdown-content-2" id="myDropdownEvents">
+						<a href="upcoming_events.html">Upcoming Events</a>
+						<a href="results.html">Results</a>
+						<a href="enter_event.html">Enter an Event</a>
+						<a href="#">Search Register</a>
+					  </div>
+				  </div>
+					<a href="NZDAC.html">NZDAC</a>
+					<a href="judges.html">Judges</a>
+					<a href="find_a_club.html">Find a Club</a>
+					
+					<div class="dropdown">
+						<a style = "padding-left:10px;">
+						  <button class="dropbtn-2" onclick="myFunctionOther()">
+							Other
+						  </button>
+						</a>
+					  <div class="mobile-dropdown-content-2" id="myDropdownOther">
+						<a href="info.html">Info for Beginners</a>
+						<a href="#">Info for Clubs</a>
+						<a href="#">Regulations</a>
+						<a href="measuring.html">Measuring</a>
+						<a href="#">Awards</a>
+						<a href="#">Courses</a>
+					  </div>
+				  </div>					
+					<a href="help_contact.html">Help/Contact</a>
 				  </div>
 			  </div> 
-			</div>
+			</ul>
 		<!--Close Nav-Bar-->
 		
-		<div class = "w3-row" style = "padding-top:20px; padding-bottom:20px">	
+		<div class = "w3-row index-paragraph" style = "padding-top:20px; ">	
 			<div class = "Main_paragraph">
 				<h1>Agility is a fun sport for Dogs and People</h1>
 				<p>
@@ -138,15 +176,25 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionProfile() {
+  document.getElementById("myDropdownProfile").classList.toggle("show");
 }
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionEvents() {
+  document.getElementById("myDropdownEvents").classList.toggle("show");
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionOther() {
+  document.getElementById("myDropdownOther").classList.toggle("show");
+}
+
+
 </script>
 		
   </body>

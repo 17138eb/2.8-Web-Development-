@@ -13,18 +13,18 @@
   <body>
 		<!--grid-->
 	<div class="w3-row">
-	  <div class="w3-col m1 w3-center w3-grey">1</div>
-	  <div class="w3-col m1 w3-center w3-white">2</div>
-	  <div class="w3-col m1 w3-center w3-grey">3</div>
-	  <div class="w3-col m1 w3-center w3-white">4</div>
-	  <div class="w3-col m1 w3-center w3-grey">5</div>
-	  <div class="w3-col m1 w3-center w3-white">6</div>
-	  <div class="w3-col m1 w3-center w3-grey">7</div>
-	  <div class="w3-col m1 w3-center w3-white">8</div>
-	  <div class="w3-col m1 w3-center w3-grey">9</div>
-	  <div class="w3-col m1 w3-center w3-white">10</div>
-	  <div class="w3-col m1 w3-center w3-grey">11</div>
-	  <div class="w3-col m1 w3-center w3-white ">12</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">1</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">2</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">3</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">4</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">5</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">6</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">7</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">8</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">9</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">10</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">11</div>
+	  <div class="w3-col m1 s1 w3-center w3-white ">12</div>
 	</div><!--close grid-->
 	
 	<!--Top Image-->  
@@ -33,28 +33,30 @@
 			</div><!--Close Image-->
 	<!--Close Top Image-->
 	
-	<!--Nav-Bar-->
-			<ul>
+	<!--Nav-Bar-Large-->
+			<ul class = "bar">
 			  <li><a href="index.html">Home</a></li>
 			   <li class="dropdown">
-				<a href="javascript:void(0)" class="dropbtn">Profile</a>
+				<a href="javascript:void(0)">Profile</a>
 				<div class="dropdown-content">
 					<a href="profile.html">Profile</a>
 					<a href="login.html">Log In/Sign up</a>
 			    </div><!--Close Profile-->
+				</li>
 			  <li class="dropdown">
-				<a href="javascript:void(0)" class="dropbtn active">Events</a>
+				<a href="javascript:void(0)" class = "active">Events</a>
 				<div class="dropdown-content">
 					<a href="upcoming_events.html">Upcoming Events</a>
 					<a href="results.html">Results</a>
 					<a href="enter_event.html">Enter an Event</a>
 					<a href="">Search Register</a>
 			    </div><!--Close Events-->
+				</li>
 			  <li><a href="find_a_club.html">Find a Club</a></li>
 			  <li><a href="judges.html">Judges</a></li>
 			  <li><a href="NZDAC.html">NZDAC</a></li>
 			  <li class="dropdown">
-				<a href="javascript:void(0)" class="dropbtn">Other</a>
+				<a href="javascript:void(0)" >Other</a>
 				<div class="dropdown-content">
 					<a href="info.html">Info for Beginners</a>
 					<a href="">Info for Clubs</a>
@@ -62,15 +64,223 @@
 					<a href="">Measuring</a>
 					<a href="">Awards</a>
 					<a href="">Courses</a>
-					
 			    </div><!--Close Other-->
+				</li>
 			  <li><a href="help_contact.html">Help/Contact</a></li>			 
 			</ul> <!--Close Nav Bar-->
 		<!--Close Nav-Bar-->
+		
+		<!--Nav-Bar-Mobile--->
+			<ul class="navbar menu">
+			  <div class="dropdown">
+				  <button class="dropbtn" onclick="myFunction()">
+					<img src="Images/menu.png" alt="Menu" height="" width="40px">
+				  </button>
+				  <div class="mobile-dropdown-content" id="myDropdown">
+					<a href="index.html">Home</a>
+				  <div class="dropdown">
+						<a style = "padding-left:10px;">
+						  <button class="dropbtn-2" onclick="myFunctionProfile()">
+							Profile
+						  </button>
+						</a>
+					  <div class="mobile-dropdown-content-2" id="myDropdownProfile">
+						<a href="profile.html">Profile</a>
+						<a href="login.html">Login/Sign Up</a>
+					  </div>
+				  </div> 
+				  
+				  <div class="dropdown">
+						<a class = "active-dropdown" style = "padding-left:10px;">
+						  <button class="dropbtn-2" onclick="myFunctionEvents()">
+							Events
+						  </button>
+						</a>
+					  <div class="mobile-dropdown-content-2" id="myDropdownEvents">
+						<a href="upcoming_events.html">Upcoming Events</a>
+						<a href="results.html">Results</a>
+						<a href="enter_event.html">Enter an Event</a>
+						<a href="#">Search Register</a>
+					  </div>
+				  </div>
+					<a href="NZDAC.html">NZDAC</a>
+					<a href="judges.html">Judges</a>
+					<a href="find_a_club.html">Find a Club</a>
+					
+					<div class="dropdown">
+						<a style = "padding-left:10px;">
+						  <button class="dropbtn-2" onclick="myFunctionOther()">
+							Other
+						  </button>
+						</a>
+					  <div class="mobile-dropdown-content-2" id="myDropdownOther">
+						<a href="info.html">Info for Beginners</a>
+						<a href="#">Info for Clubs</a>
+						<a href="#">Regulations</a>
+						<a href="measuring.html">Measuring</a>
+						<a href="#">Awards</a>
+						<a href="#">Courses</a>
+					  </div>
+				  </div>					
+					<a href="help_contact.html">Help/Contact</a>
+				  </div>
+			  </div> 
+			</ul>
+		<!--Close Nav-Bar-->
 	
 	<h1 class = "title"> Results </h1><!-- Title -->
-		
-		
+	
+	<div class = "w3-row w3-center">
+	  
+	  <select name="year" id="year">
+		<option value="2020">2020</option>
+		<option value="2019">2019</option>
+		<option value="2018">2018</option>
+		<option value="2017">2017</option>
+		<option value="2016">2016</option>
+		<option value="2015">2015</option>
+		<option value="2014">2014</option>
+		<option value="2013">2013</option>
+	  </select>
+	  
+	  <select name="competition" id="competition">
+		<option value="0">Select a Competition</option>
+		<option value="1">Blenheim Ribbon 8-3-2020</option>
+		<option value="2">Cambridge Champ 8/9-3-2020</option>
+		<option value="3">DAWG (Wellington) Champ 25/26-1-2020</option>
+		<option value="4">Hawera Champ 22/23-2-2020</option>
+		<option value="5">Kaipara Ribbon 22-2-2020</option>
+		<option value="6">Manukau Ribbon 1-3-2020</option>
+	  </select>
+	  
+	  <select name="class" id="class">
+		<option value="0">Class Name</option>
+		<option value="EA">EA</option>
+		<option value="EB">EB</option>
+		<option value="EC">EC</option>
+		<option value="Strs">Starters</option>
+		<option value="Nov">Novice</option>
+		<option value="Int">Intermediate</option>
+		<option value="Sen">Senior</option>
+		<option value="JA">JA</option>
+		<option value="JB">JB</option>
+		<option value="JC">JC</option>
+	  </select>
+	  
+	  <select name="filter" id="filter">
+		<option value="Perm-nbr">Permanent No.</option>
+		<option value="Reg-name">Registered Name</option>
+		<option value="Pet-name">Pet Name</option>
+		<option value="nzkc">Dog NZKC No.</option>
+	  </select>
+	  
+	  <input id="w3review" name="w3review"></input>
+	 </div>
+	 
+	 <div class = "w3-row w3-center">
+		 <select name="clear-round" id="clear-round">
+			<option value="Yes">Clear rounds only</option>
+			<option value="No">All rounds</option>
+		 </select>
+		 
+		 <select name="club-members" id="club-members">
+			<option value="0">Filter by club members</option>
+			<option value="Akarana">Akarana Dog Training Club</option>
+		 </select>
+		 
+		 <div class = "w3-row w3-center" style = "padding-top: 20px; padding-bottom: 20px;">
+				<button class = "w3-center">SEARCH</button>
+		</div><!-- Close Row-->
+	 </div>
+	 
+<div class = "table">
+	 <h1 class = "results-title"> JC 1 SCT: 36 CL: 108  Date: 25/01/2020 Graeme Lawson, Nbr Of Dogs: 30    Results Final Uploaded: 26-01-2020</h1>
+	 <table class="events not-mobile">
+  <tr>
+    <th>Result</th>
+    <th>Dog</th>
+    <th>Owner</th>
+  </tr>
+  <tr>
+    <td>1 0/23.110 sec</td>
+    <td>R107 Tilani My Shining star (Bichon X )</td>
+    <td>Robyn Williams</td>
+  </tr>
+  <tr>
+    <td>2 0/25.650 sec</td>
+    <td>R289 Trixie (Kelpie)</td>
+    <td>Emily Braithwaite</td>
+  </tr>
+  <tr>
+    <td>3 0/27.180 sec</td>
+    <td>S013 Bailey (Shih-Tzu/Bichon Cross)	</td>
+    <td>Sharon Dey</td>
+  </tr>
+  <tr>
+    <td>4 0/27.810 sec</td>
+    <td>S160 Bica Boo (Miniature Foxy)</td>
+    <td>Lorraine Hazlewood</td>
+  </tr>
+  </table>
+</div>		
+
+<div class = "table">
+	 <h1 class = "results-title"> JC 2 SCT: 43 CL: 120  Date: 26/01/2020 Meredith Evans, Nbr Of Dogs: 28    Results Final Uploaded: 26-01-2020</h1>
+	 <table class="events not-mobile">
+  <tr>
+    <th>Result</th>
+    <th>Dog</th>
+    <th>Owner</th>
+  </tr>
+  <tr>
+    <td>1 0/26.920 sec</td>
+    <td>S611 Orsum Magic of Sarelle (German Shepherd)</td>
+    <td>Suzie Inskeep</td>
+  </tr>
+  <tr>
+    <td>2 0/28.500 sec</td>
+    <td>U620 Ostara Time in Motion (Dobermann)</td>
+    <td>Jane Webley</td>
+  </tr>
+  <tr>
+    <td>3 0/29.600 sec</td>
+    <td>R620 Patonshill Wildest-Dream (Dobermann)</td>
+    <td>Jane Webley</td>
+  </tr>
+  <tr>
+    <td>4 0/30.140 sec</td>
+    <td>T221 Rangeview Shelby Right (English Springer Spaniel X Border Collie)</td>
+    <td>Wayne Turner</td>
+  </tr>
+  </table>
+</div>
+				<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionProfile() {
+  document.getElementById("myDropdownProfile").classList.toggle("show");
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionEvents() {
+  document.getElementById("myDropdownEvents").classList.toggle("show");
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionOther() {
+  document.getElementById("myDropdownOther").classList.toggle("show");
+}
+
+
+</script>
   </body>
   
 </html>
