@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
-	<body bgcolor="#fc7b03">
+	<body bgcolor="white">
 	
   </head> 
   <body>
@@ -128,60 +128,275 @@
 		<!--Close Nav-Bar-->
 		
 		<h1 class = "title"> Profile </h1><!-- Title -->
-			
-		<div class = "box">
-			<div class = "w3-row">
-				<p class = "profile w3-col m6">First Name: Emily<br><br>
-				Last Name: Braithwaite<br><br>
-				Email:-------------- <br><br></p>
-				<p class = "profile w3-col m6">
-				Cellphone:--------------<br><br>
-				DogsNZ Number:<br><br>
-				Club: DAWG</p>
-				<div class = "w3-row" style = "padding-left: 100px; padding-right: 100px; padding-bottom: 50px;">
-					<div class = "w3-container w3-col m6">
-					</div>
-					<button class = "w3-center edit_info w3-col m2">EDIT INFO</button>
-				</div><!--Close Button-->
-			</div><!--Close Row-->
-		</div><!-- Close Box-->
-			
-	<h1 class = "title"> My Dogs </h1><!-- Title -->
+		
+<div class = "table">
+	<table class="profile-table not-mobile">
+		  <tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Email</th>
+			<th>Phone Nbr</th>
+			<th>Address</th>
+			<th>Club</th>
+			<th>JDT</th>
+		  </tr>
+		  <tr>
+			<td>Emily</td>
+			<td>Braithwaite</td>
+			<td>---------------</td>
+			<td>---------------</td>
+			<td>---------------</td>
+			<td>DAWG</td>
+			<td>Yes</td>
+		  </tr>
+	</table>
+</div>
+		
+<h1 class = "title w3-col m12"> My Dogs </h1><!-- Title -->
+		
+<div class = "table"><!--My Dogs Table-->
+
+	<table class="events not-mobile">
+		  <tr>
+			<th>Nbr</th>
+			<th>Pet Name</th>
+			<th>Registered Name</th>
+			<th>Breed</th>
+			<th>Date of Birth</th>
+			<th>Height</th>
+			<th>Active</th>
+			<th>Edit Info</th>
+			<th>View Results</th>
+		  </tr>
+		  <tr>
+			<td>V189</td>
+			<td>Louie</td>
+			<td>Louie the Fly</td>
+			<td>BC/Jack Russel Terrier</td>
+			<td>4/2/2019</td>
+			<td>370mm(320s)</td>
+			<td>Yes</td>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		  </tr>
+		  <tr>
+			<td>S346</td>
+			<td>Poppy</td>
+			<td>Poppy</td>
+			<td>Huntaway X</td>
+			<td>4/5/2016</td>
+			<td>600+mm (600s)</td>
+			<td>Yes</td>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		  </tr>
+		  <tr>
+			<td>R289</td>
+			<td>Trixie</td>
+			<td>Trixie</td>
+			<td>Kelpie</td>
+			<td>31/1/2015</td>
+			<td>481mm (500s)</td>
+			<td>Yes</td>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		  </tr>
+		  <tr>
+			<td>I389</td>
+			<td>Murphy</td>
+			<td>Glentrieve It's Raining Men</td>
+			<td>Golden Retriever</td>
+			<td>31/12/2006</td>
+			<td>600+mm (600s)</td>
+			<td>No</td>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		  </tr>
+		  <tr>
+			<td>B389</td>
+			<td>Lucy</td>
+			<td>Lucy Goose</td>
+			<td>BC X</td>
+			<td>2/12/1999</td>
+			<td>600+mm (600s)</td>
+			<td>No</td>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		  </tr>
+	</table>
 	
-	<div class = "box" style= "border-bottom: 30px solid #fc7b03;>
-			<div class = "w3-row">
-				<p class = "profile w3-col m6">Reg Name: Louie the Fly<br><br>
-				Pet Name: Louie<br><br>
-				Breed: Jack Russel/BC<br><br></p>
-				<p class = "profile w3-col m6">
-				Perm No.: V189<br><br>
-				Height: 360mm<br><br>
-				Date of Birth: 04/02/2019</p>
-				<div class = "w3-row" style = "padding-left: 100px; padding-right: 100px; padding-bottom: 50px;">
-					<div class = "w3-container w3-col m6">
-					</div>
-					<button class = "w3-center edit_info w3-col m2">EDIT INFO</button>
-				</div><!--Close Button-->
-			</div><!--Close Row-->
-		</div><!-- Close Box-->
+	
+	<table class = "profile-mobile events not-pc"><!--Louie-->
+		<tr>
+			<td class = "heading">Nbr</td>
+			<td>V189</td>
+		</tr>
+		<tr>
+			<td class = "heading">Pet Name</td>
+			<td>Louie</td>
+		</tr>
+		<tr>
+			<td class = "heading">Reg Name</td>
+			<td>Louie The Fly</td>
+		</tr>
+		<tr>
+			<td class = "heading">Breed</td>
+			<td>BC/Jack Russel</td>
+		</tr>
+		<tr>
+			<td class = "heading">DOB</td>
+			<td>4/2/19</td>
+		</tr>
+		<tr>
+			<td class = "heading">Height</td>
+			<td>370mm (320s)</td>
+		</tr>
+		<tr>
+			<td class = "heading">Active</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		</tr>
+</div>
+
+<table class="profile-mobile events not-pc"><!--Trixie-->
+		<tr>
+			<td class = "heading">Nbr</td>
+			<td>R289</td>
+		</tr>
+		<tr>
+			<td class = "heading">Pet Name</td>
+			<td>Trixie</td>
+		</tr>
+		<tr>
+			<td class = "heading">Reg Name</td>
+			<td>Trixie</td>
+		</tr>
+		<tr>
+			<td class = "heading">Breed</td>
+			<td>Kelpie</td>
+		</tr>
+		<tr>
+			<td class = "heading">DOB</td>
+			<td>31/1/2015</td>
+		</tr>
+		<tr>
+			<td class = "heading">Height</td>
+			<td>481mm (500s)</td>
+		</tr>
+		<tr>
+			<td class = "heading">Active</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		</tr>
 		
-		<div class = "box" >
-			<div class = "w3-row">
-				<p class = "profile w3-col m6">Reg Name: Trixie<br><br>
-				Pet Name: Trixie<br><br>
-				Breed: Kelpie<br><br></p>
-				<p class = "profile w3-col m6">
-				Perm No.: R289<br><br>
-				Height: 520mm<br><br>
-				Date of Birth: 31/1/2015</p>
-				<div class = "w3-row" style = "padding-left: 100px; padding-right: 100px; padding-bottom: 50px;">
-					<div class = "w3-container w3-col m6">
-					</div>
-					<button class = "w3-center edit_info w3-col m2">EDIT INFO</button>
-				</div><!--Close Button-->
-			</div><!--Close Row-->
-		</div><!-- Close Box-->
 		
+<table class="profile-mobile events not-pc"><!--Poppy-->
+		<tr>
+			<td class = "heading">Nbr</td>
+			<td>S346</td>
+		</tr>
+		<tr>
+			<td class = "heading">Pet Name</td>
+			<td>Poppy</td>
+		</tr>
+		<tr>
+			<td class = "heading">Reg Name</td>
+			<td>Poppy</td>
+		</tr>
+		<tr>
+			<td class = "heading">Breed</td>
+			<td>Huntaway X</td>
+		</tr>
+		<tr>
+			<td class = "heading">DOB</td>
+			<td>4/5/2016</td>
+		</tr>
+		<tr>
+			<td class = "heading">Height</td>
+			<td>600+mm (600s)</td>
+		</tr>
+		<tr>
+			<td class = "heading">Active</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		</tr>
+		
+		<table class="profile-mobile events not-pc"><!--Murphy-->
+		<tr>
+			<td class = "heading">Nbr</td>
+			<td>I389</td>
+		</tr>
+		<tr>
+			<td class = "heading">Pet Name</td>
+			<td>Murphy</td>
+		</tr>
+		<tr>
+			<td class = "heading">Reg Name</td>
+			<td>Glentrieve It's Raining Men</td>
+		</tr>
+		<tr>
+			<td class = "heading">Breed</td>
+			<td>Golden Retriever</td>
+		</tr>
+		<tr>
+			<td class = "heading">DOB</td>
+			<td>31/12/2006</td>
+		</tr>
+		<tr>
+			<td class = "heading">Height</td>
+			<td>600+mm (600s)</td>
+		</tr>
+		<tr>
+			<td class = "heading">Active</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		</tr>
+		
+		<table class="profile-mobile events not-pc"><!--Lucy-->
+		<tr>
+			<td class = "heading">Nbr</td>
+			<td>B389</td>
+		</tr>
+		<tr>
+			<td class = "heading">Pet Name</td>
+			<td>Lucy</td>
+		</tr>
+		<tr>
+			<td class = "heading">Reg Name</td>
+			<td>Lucy Goose</td>
+		</tr>
+		<tr>
+			<td class = "heading">Breed</td>
+			<td>BC X</td>
+		</tr>
+		<tr>
+			<td class = "heading">DOB</td>
+			<td>2/12/1999</td>
+		</tr>
+		<tr>
+			<td class = "heading">Height</td>
+			<td>600+mm (600s)</td>
+		</tr>
+		<tr>
+			<td class = "heading">Active</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		</tr>
 				<script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
@@ -206,7 +421,6 @@ toggle between hiding and showing the dropdown content */
 function myFunctionOther() {
   document.getElementById("myDropdownOther").classList.toggle("show");
 }
-
 
 </script>
 
