@@ -37,7 +37,6 @@ li a {
 	border-top: 0px;
 	}
  
- 
 	select {
 	font-size: 15px;
 	}
@@ -63,7 +62,8 @@ li a {
 	  background-color: white;
 	  font-size: 20px;
 	  text-align: left;
-}
+	}
+	
 	.index-paragraph {
 	  padding-bottom:0px;
 	}
@@ -218,8 +218,6 @@ h1{
 	background-color: white;
 }
 
-
-
 .news {
 	color: black;
 	padding-top:15px;
@@ -244,7 +242,6 @@ input {
 	border: 2px solid black;
 	border-radius: 5px;
 }
-
 
 button.edit_info{
 	background-color: #a6a6a6;
@@ -491,6 +488,7 @@ td.heading {
 table.profile-mobile{
 	border-bottom: 20px solid #fc7b03;
 }
+
 .card-mobile {
 	padding-left: 50px;
 	padding-right: 50px;
@@ -503,6 +501,20 @@ table.profile-mobile{
 .image-label {
 	padding-bottom: 20px;
 	
+}
+
+h1.contact {
+	text-align: left;
+	padding: 20px;
+	font-size: 24px;
+}
+
+.contact-box {
+	background-color: white;
+}
+
+.help-image {
+	padding: 100px;
 }
 
 #fc7b03 orange
