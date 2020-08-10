@@ -1,3 +1,29 @@
+/*****************************************************************************************************************************/
+												  /*Main Styles*/
+/*****************************************************************************************************************************/
+p{
+  text-align: center;
+  font-size: 18px;
+}
+h1{
+  text-align: center;
+  font-size: 35px;
+}
+.show {
+  display: block;
+}
+.link{
+  color: blue;
+}
+.show {
+  display: block;
+}
+.link{
+  color: blue;
+}
+/*****************************************************************************************************************************/
+												  /*Nav Bar PC*/
+/*****************************************************************************************************************************/
 ul {
   list-style-type: none;
   margin: 0;
@@ -5,126 +31,33 @@ ul {
   overflow: hidden;
   background-color: black;
 }
-
 li {
   float: left;
 }
-
 li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 28px; 
-}
-
-
-@media screen and (max-width: 992px) { /*On Mobile*/
-	ul.bar {
-	display: none;
-	}
-	
-	.not-mobile{
-	display: none;
-	}
-  
-	.heading{
-	border-top: 0px;
-	}
- 
- 
-	select {
-	font-size: 15px;
-	}
-	
-	.title {
-	color: white;
-	font-size: 34px;
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-left:50px;
-	padding-right:50px;
-	background-color: black;
-	border-top: 2px solid #fc7b03;
-	border-bottom: 2px solid #fc7b03;
-	
-}
-	.profile {
-	color: black;
-	padding-top:15px;
-	padding-bottom:15px;
-	padding-left: 30px;
-	padding-right: 30px;
-	background-color: white;
-	font-size: 20px;
-	text-align: left;
-}
-	.index-paragraph {
-	padding-bottom:0px;
-	}
-
-}
-
-@media screen and (min-width: 992px) { /*On PC*/
-	
-	.menu{
-		display:none;
-	}
-	
-	.not-pc{
-		display: none;
-	}
-	
-	select {
-	font-size: 20px;
-	}
-	
-	.title {
-	color: white;
-	font-size: 40px;
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-left:50px;
-	padding-right:50px;
-	background-color: black;
-	border-top: 15px solid #fc7b03;
-	border-bottom: 15px solid #fc7b03;
-}
-	.profile {
-	color: black;
-	padding-top:15px;
-	padding-bottom:15px;
-	padding-left: 30px;
-	padding-right: 30px;
-	background-color: white;
-	font-size: 24px;
-	text-align: left;
-}
-	.index-paragraph {
-	padding-bottom:20px;
-	}
+  font-size: 38px; 
+  font-family: 'Abel', sans-serif;
 }
 li a:hover {
   background-color: #fc7b03 ;
-  color:white ;
+  color: white ;
 }
-
 li.dropdown {
   display: inline-block;
 }
-
 .active {
   background-color: #fc7b03;
   color: white;
 }
-
 .active-dropdown {
   background-color: #a6a6a6 ;
   color: white;
 }
-
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -132,106 +65,28 @@ li.dropdown {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-size: 26px;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
-  font-size: 20px;
+  font-size: 26px;
 }
-
 .dropdown-content a:hover {
-	background-color: #a6a6a6;
-	color: white;
-	}
-
+  background-color: #a6a6a6;
+  color: white;
+}
 .dropdown:hover .dropdown-content {
   display: block;
   background-color: white;
 }
-
-p{
-  text-align: center;
-  font-size: 18px;
-}
-
-h1{
-  text-align: center;
-  font-size: 35px;
-}
-
-.Main_paragraph {
-	color: black;
-	padding-top:15px;
-	padding-bottom:15px;
-	padding-left:50px;
-	padding-right:50px;
-	background-color: white;
-}
-
-.heading {
-	color: white;
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-left:50px;
-	padding-right:50px;
-	background-color: black;
-	border-bottom: 10px solid #fc7b03 ;
-	border-top: 10px solid #fc7b03;
-}
-
-.news {
-	color: black;
-	padding-top:15px;
-	padding-bottom:15px;
-	padding-left:50px;
-	padding-right:50px;
-	background-color: white;
-	border-top:20px;
-}
-
-
-	
-.box {
-	background-color: white;
-	border-left: 30px solid #fc7b03;
-	border-right: 30px solid #fc7b03;
-	
-}
-
-
-button.edit_info{
-	background-color: #a6a6a6;
-	color: white;
-	text-align: center;
-	font-size: 18px; 
-	padding:15px;
-	border: 0px;
-	
-}
-
-button.edit_info:hover{
-	background-color: #fc7b03;
-	text-align: center;
-	font-size: 18px; 
-	border: 0px;
-	color: white;
-}
-
-button.menu-button{
-	background-color: black;
-	border: 0px;
-}
-
 .navbar {
   overflow: hidden;
   background-color: black;
-  
 }
-
 .navbar a {
   float: left;
   font-size: 16px;
@@ -239,9 +94,10 @@ button.menu-button{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  
 }
-
+/*****************************************************************************************************************************/
+												  /*Nav Bar Mobile*/
+/*****************************************************************************************************************************/
 .dropdown .dropbtn {
   cursor: pointer;
   font-size: 16px;  
@@ -253,10 +109,9 @@ button.menu-button{
   font-family: inherit;
   margin: 0;
 }
-
 .dropbtn-2 {
   cursor: pointer;
-  font-size: 16px;  
+  font-size: 20px;  
   border: none;
   outline: none;
   color: inherit;
@@ -264,10 +119,8 @@ button.menu-button{
   font-family: inherit;
   margin: 0;
 }
-
 .dropbtn-2:hover {
-  cursor: pointer;
-  font-size: 16px;  
+  cursor: pointer; 
   border: none;
   outline: none;
   color: inherit;
@@ -275,15 +128,12 @@ button.menu-button{
   font-family: inherit;
   margin: 0;
 }
-
 .navbar a:hover, .dropdown-click:hover .dropbtn, .dropbtn:focus {
   background-color: black ;
 }
-
 .navbar a:hover, .dropdown-click:hover .dropbtn-2, .dropbtn-2:focus {
   background-color: inherit ;
 }
-
 .mobile-dropdown-content {
   display: none;
   position: absolute;
@@ -292,7 +142,6 @@ button.menu-button{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .mobile-dropdown-content a {
   float: none;
   color: black;
@@ -300,14 +149,14 @@ button.menu-button{
   text-decoration: none;
   display: block;
   text-align: left;
-  
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
 }
-
 .mobile-dropdown-content a:hover {
   background-color: #a6a6a6;
   color:white;
+  font-size: 20px;
 }
-
 .mobile-dropdown-content-2 {
   display: none;
   position: absolute;
@@ -315,8 +164,8 @@ button.menu-button{
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-size: 20px;
 }
-
 .mobile-dropdown-content-2 a {
   float: none;
   color: white;
@@ -324,39 +173,36 @@ button.menu-button{
   text-decoration: none;
   display: block;
   text-align: left;
-  
+  font-size: 20px;
 }
-
 .mobile-dropdown-content-2 a:hover {
   background-color: #fc7b03;
   color:white;
 }
-
-.show {
-  display: block;
-}
-
 .dropdown-click {
   float: left;
   overflow: hidden;
   background-color: black;
 }
-
+/*****************************************************************************************************************************/
+													/*Tables*/
+/*****************************************************************************************************************************/
+.table {
+  padding-bottom: 50px; 
+  padding-left: 20px; 
+  padding-right: 20px;
+}
 .events {
   border-collapse: collapse;
   width: 100%;
 }
-
 .events td, .events th {
   border: 1px solid #ddd;
   padding: 8px;
 }
-
 .events tr:nth-child(even){background-color: #f2f2f2;}
 .events tr:nth-child(odd){background-color: white;}
-
 .events tr:hover {background-color: #ddd;}
-
 .events th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -364,27 +210,272 @@ button.menu-button{
   background-color: #a6a6a6;
   color: white;
 }
-
-.link{
-	color: blue;
+.profile-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.profile-table td, .profile-table th {
+  border: 1px solid #ddd;
+  font-size: 18px;
+  padding: 8px;
+}
+.profile-table tr:nth-child(even){background-color: #f2f2f2;}
+.profile-table tr:nth-child(odd){background-color: white;}
+.profile-table tr:hover {background-color: #ddd;}
+.profile-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  font-size: 20px;
+  background-color: #a6a6a6;
+  color: white;
+}
+td.heading {
+  background-color: #a6a6a6;
+  color: white;
+  font-size: 18px;
 }
 
-.table {
-	padding-bottom: 50px; 
-	padding-left: 20px; 
-	padding-right: 20px;
-	
+table.profile-mobile{
+	border-bottom: 20px solid #fc7b03;
 }
-
-.results-title {
-	background-color: black;
-	color: white;
-	font-size:24px;
+/*****************************************************************************************************************************/
+													 /*Images*/
+/*****************************************************************************************************************************/
+.help-image {
+	padding: 100px;
+}
+.image-padding {
+  padding: 30px;
+}
+.nzdac-image{
+  padding-top: 50px;
+}
+.image-label {
+	padding-bottom: 20px;
+}
+.info-image{
+  padding: 40px;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+/*****************************************************************************************************************************/
+												   /* On Mobile */
+/*****************************************************************************************************************************/
+@media screen and (max-width: 992px) { /*On Mobile*/
+	ul.bar {
+		  display: none;
+	}
+	.not-mobile{
+		  display: none;
+	}
+	.heading{
+		  border-top: 0px;
+	}
+	select {
+		  font-size: 15px;
+	}	
+	.title {
+		 color: white;
+		 font-size: 34px;
+		 padding-top:10px;
+		 padding-bottom:10px;
+		 padding-left:50px;
+		 padding-right:50px;
+		 background-color: black;
+		 border-top: 2px solid #fc7b03;
+		 border-bottom: 2px solid #fc7b03;	
+	}
+	.profile {
+		 color: black;
+		 padding-top:15px;
+		 padding-bottom:15px;
+		 padding-left: 30px;
+	     padding-right: 30px;
+		 background-color: white;
+		 font-size: 20px;
+		 text-align: left;
+	}	
+	.index-paragraph {
+		  padding-bottom:0px;
+	}	
+	.results-title {
+		 background-color: black;
+		 color: white;
+		 font-size:14px;
+		 text-align: center;
+		 padding-left: 10px;
+		 padding-right: 10px;
+	}
+	.heading {
+		 color: white;
+		 padding-top:5px;
+		 padding-bottom:5px;
+		 padding-left:50px;
+		 padding-right:50px;
+		 background-color: black;
+		 border-bottom: 10px solid #fc7b03 ;
+		 border-top: 10px solid #fc7b03;
+	}
+}
+/*****************************************************************************************************************************/
+												    /* On PC */
+/*****************************************************************************************************************************/
+@media screen and (min-width: 992px) { /*On PC*/
+	.menu{
+		 display:none;
+	}	
+	.not-pc{
+		 display: none;
+	}
+	select {
+		 font-size: 20px;
+	}	
+	.title {
+		 color: white;
+		 font-size: 40px;
+		 padding-top:10px;
+		 padding-bottom:10px;
+		 padding-left:50px;
+		 padding-right:50px;
+		 background-color: black;
+		 border-top: 15px solid #fc7b03;
+		 border-bottom: 15px solid #fc7b03;
+	}	
+	.profile {
+		 color: black;
+		 padding-top:15px;
+		 padding-bottom:15px;
+		 padding-left: 30px;
+		 padding-right: 30px;
+		 background-color: white;
+		 font-size: 24px;
+		 text-align: left;
+	}	
+	.index-paragraph {
+		 padding-bottom:20px;
+	}	 
+	.results-title {
+		 background-color: black;
+		 color: white;
+		 font-size:24px;
+		 text-align: left;
+		 padding-left: 10px;
+	}	
+	.heading {
+		 color: white;
+		 padding-top:10px;
+		 padding-bottom:10px;
+		 padding-left:50px;
+		 padding-right:50px;
+		 background-color: black;
+		 border-bottom: 10px solid #fc7b03 ;
+		 border-top: 10px solid #fc7b03;
+	}
+}
+/*****************************************************************************************************************************/
+												     /* Buttons */
+/*****************************************************************************************************************************/
+button.edit_info{
+	  background-color: #a6a6a6;
+	  color: white;
+	  text-align: center;
+	  font-size: 18px; 
+	  padding:15px;
+	  border: 4px solid black;	
+	  border-radius: 10px;
+}
+button.button-small{
+	  background-color: #a6a6a6;
+	  color: white;
+	  text-align: center;
+	  font-size: 12px; 
+	  padding:15px;
+	  border: 2px solid black;	
+	  border-radius: 10px;
+}
+button.edit_info:hover{
+	  background-color: #fc7b03;
+	  text-align: center;
+	  font-size: 18px; 
+	  border: 0px;
+	  color: white;
+	  border: 4px solid black;	
+	  border-radius: 10px;
+}
+button.button-small:hover{
+	  background-color: #fc7b03;
+	  text-align: center;
+	  font-size: 12px; 
+	  border: 0px;
+	  color: white;
+	  border: 2px solid black;	
+	  border-radius: 10px;
+}
+button.menu-button{
+	  background-color: black;
+	  border: 0px;
+}
+/*****************************************************************************************************************************/
+												     /* Other */
+/*****************************************************************************************************************************/
+.Main_paragraph {
+	color: black;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:50px;
+	padding-right:50px;
+	background-color: white;
+}
+.news {
+	color: black;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:50px;
+	padding-right:50px;
+	background-color: white;
+	border-top:20px;
+}
+.box {
+	background-color: white;
+	padding-left: 50px;	
+}
+.box-padding {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+input {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.judges-list{
+  padding: 30px
+}
+.info {
+  text-align: left;
+}
+.card-mobile {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.card-pc {
+	padding: 20px;
+}
+h1.contact {
 	text-align: left;
-	padding-left: 10px;
-	
+	padding: 20px;
+	font-size: 24px;
 }
+.contact-box {
+	background-color: white;
+}
+.log-in {
+	padding-left:30px;
+	padding-right:30px;
+}
+/*****************************************************************************************************************************/
+												     /* Colours */
+/*****************************************************************************************************************************/
 #fc7b03 orange
-
 #a6a6a6 grey
-
+/*****************************************************************************************************************************/
