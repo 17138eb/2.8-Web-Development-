@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="icon" href="Images\paw.png" type="image/gif" sizes="32x32">
+    <title>DogsNZ Agility - Profile</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+	<body bgcolor="#fc7b03">
+	
+  </head> 
+  <body>
+		<!--grid-->
+	<div class="w3-row">
+	  <div class="w3-col m1 s1 w3-center w3-grey">1</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">2</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">3</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">4</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">5</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">6</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">7</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">8</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">9</div>
+	  <div class="w3-col m1 s1 w3-center w3-white">10</div>
+	  <div class="w3-col m1 s1 w3-center w3-grey">11</div>
+	  <div class="w3-col m1 s1 w3-center w3-white ">12</div>
+	</div><!--close grid-->
+	
+	<!--Top Image-->  
+			<div class= "w3-row">
+				<img class= "w3-col m12 " src="Images/Profile_Title.png" alt="Dog Jumping" height="" width="">
+			</div><!--Close Image-->
+	<!--Close Top Image-->
+	<!--Nav-Bar-Large-->
+			<ul class = "bar">
+			  <li><a href="index.html">Home</a></li>
+			   <li class="dropdown">
+				<a href="javascript:void(0)" class ="active">Profile</a>
+				<div class="dropdown-content">
+					<a href="profile.html">Profile</a>
+					<a href="login.html">Log In/Sign up</a>
+			    </div><!--Close Profile-->
+				</li>
+			  <li class="dropdown">
+				<a href="javascript:void(0)">Events</a>
+				<div class="dropdown-content">
+					<a href="upcoming_events.html">Upcoming Events</a>
+					<a href="results.html">Results</a>
+					<a href="enter_event.html">Enter an Event</a>
+					<a href="">Search Register</a>
+			    </div><!--Close Events-->
+				</li>
+			  <li><a href="find_a_club.html">Find a Club</a></li>
+			  <li><a href="judges.html">Judges</a></li>
+			  <li><a href="NZDAC.html">NZDAC</a></li>
+			  <li class="dropdown">
+				<a href="javascript:void(0)" >Other</a>
+				<div class="dropdown-content">
+					<a href="info.html">Info for Beginners</a>
+					<a href="">Info for Clubs</a>
+					<a href="">Regulations</a>
+					<a href="">Measuring</a>
+					<a href="">Awards</a>
+					<a href="">Courses</a>
+			    </div><!--Close Other-->
+				</li>
+			  <li><a href="help_contact.html">Help/Contact</a></li>			 
+			</ul> <!--Close Nav Bar-->
+		<!--Close Nav-Bar-->
+		
+		<!--Nav-Bar-Mobile--->
+			<ul class="navbar menu">
+			  <div class="dropdown">
+				  <button class="dropbtn" onclick="myFunction()">
+					<img src="Images/menu.png" alt="Menu" height="" width="40px">
+				  </button>
+				  <div class="mobile-dropdown-content" id="myDropdown">
+					<a href="index.html">Home</a>
+				  <div class="dropdown">
+						<a class = "active-dropdown" style = "padding-left:10px;">
+						  <button class="dropbtn-2" onclick="myFunctionProfile()">
+							Profile
+						  </button>
+						</a>
+					  <div class="mobile-dropdown-content-2" id="myDropdownProfile">
+						<a href="profile.html">Profile</a>
+						<a href="login.html">Login/Sign Up</a>
+					  </div>
+				  </div> 
+				  
+				  <div class="dropdown">
+						<a style = "padding-left:10px;">
+						  <button class="dropbtn-2" onclick="myFunctionEvents()">
+							Events
+						  </button>
+						</a>
+					  <div class="mobile-dropdown-content-2" id="myDropdownEvents">
+						<a href="upcoming_events.html">Upcoming Events</a>
+						<a href="results.html">Results</a>
+						<a href="enter_event.html">Enter an Event</a>
+						<a href="#">Search Register</a>
+					  </div>
+				  </div>
+					<a href="NZDAC.html">NZDAC</a>
+					<a href="judges.html">Judges</a>
+					<a href="find_a_club.html">Find a Club</a>
+					
+					<div class="dropdown">
+						<a style = "padding-left:10px;">
+						  <button class="dropbtn-2" onclick="myFunctionOther()">
+							Other
+						  </button>
+						</a>
+					  <div class="mobile-dropdown-content-2" id="myDropdownOther">
+						<a href="info.html">Info for Beginners</a>
+						<a href="#">Info for Clubs</a>
+						<a href="#">Regulations</a>
+						<a href="measuring.html">Measuring</a>
+						<a href="#">Awards</a>
+						<a href="#">Courses</a>
+					  </div>
+				  </div>					
+					<a href="help_contact.html">Help/Contact</a>
+				  </div>
+			  </div> 
+			</ul>
+		<!--Close Nav-Bar-->
+		
+		<h1 class = "title"> Profile </h1><!-- Title -->
+		<div class = "table">
+		<table class="profile-mobile events not-pc"><!--Murphy-->
+		<tr>
+			<td class = "heading">First Name</td>
+			<td>Emily</td>
+		</tr>
+		<tr>
+			<td class = "heading">Last Name</td>
+			<td>Braithwaite</td>
+		</tr>
+		<tr>
+			<td class = "heading">Email</td>
+			<td>-------</td>
+		</tr>
+		<tr>
+			<td class = "heading">Phone Nbr</td>
+			<td>--------</td>
+		</tr>
+		<tr>
+			<td class = "heading">Address</td>
+			<td>-------</td>
+		</tr>
+		<tr>
+			<td class = "heading">Club</td>
+			<td>DAWG</td>
+		</tr>
+		<tr>
+			<td class = "heading">JDT</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td></td>
+		</tr>
+		</div>
+		
+<div class = "table">
+	<table class="profile-table not-mobile">
+		  <tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Email</th>
+			<th>Phone Nbr</th>
+			<th>Address</th>
+			<th>Club</th>
+			<th>JDT</th>
+		  </tr>
+		  <tr>
+			<td>Emily</td>
+			<td>Braithwaite</td>
+			<td>---------------</td>
+			<td>---------------</td>
+			<td>---------------</td>
+			<td>DAWG</td>
+			<td>Yes</td>
+		  </tr>
+	</table>
+</div>
+		
+<h1 class = "title w3-col m12"> My Dogs </h1><!-- Title -->
+		
+<div class = "table"><!--My Dogs Table-->
+
+	<table class="events not-mobile">
+		  <tr>
+			<th>Nbr</th>
+			<th>Pet Name</th>
+			<th>Registered Name</th>
+			<th>Breed</th>
+			<th>Date of Birth</th>
+			<th>Height</th>
+			<th>Active</th>
+			<th>Edit Info</th>
+			<th>View Results</th>
+		  </tr>
+		  <tr>
+			<td>V189</td>
+			<td>Louie</td>
+			<td>Louie the Fly</td>
+			<td>BC/Jack Russel Terrier</td>
+			<td>4/2/2019</td>
+			<td>370mm(320s)</td>
+			<td>Yes</td>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		  </tr>
+		  <tr>
+			<td>S346</td>
+			<td>Poppy</td>
+			<td>Poppy</td>
+			<td>Huntaway X</td>
+			<td>4/5/2016</td>
+			<td>600+mm (600s)</td>
+			<td>Yes</td>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		  </tr>
+		  <tr>
+			<td>R289</td>
+			<td>Trixie</td>
+			<td>Trixie</td>
+			<td>Kelpie</td>
+			<td>31/1/2015</td>
+			<td>481mm (500s)</td>
+			<td>Yes</td>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		  </tr>
+		  <tr>
+			<td>I389</td>
+			<td>Murphy</td>
+			<td>Glentrieve It's Raining Men</td>
+			<td>Golden Retriever</td>
+			<td>31/12/2006</td>
+			<td>600+mm (600s)</td>
+			<td>No</td>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		  </tr>
+		  <tr>
+			<td>B389</td>
+			<td>Lucy</td>
+			<td>Lucy Goose</td>
+			<td>BC X</td>
+			<td>2/12/1999</td>
+			<td>600+mm (600s)</td>
+			<td>No</td>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		  </tr>
+	</table>
+	
+	
+	<table class = "profile-mobile events not-pc"><!--Louie-->
+		<tr>
+			<td class = "heading">Nbr</td>
+			<td>V189</td>
+		</tr>
+		<tr>
+			<td class = "heading">Pet Name</td>
+			<td>Louie</td>
+		</tr>
+		<tr>
+			<td class = "heading">Reg Name</td>
+			<td>Louie The Fly</td>
+		</tr>
+		<tr>
+			<td class = "heading">Breed</td>
+			<td>BC/Jack Russel</td>
+		</tr>
+		<tr>
+			<td class = "heading">DOB</td>
+			<td>4/2/19</td>
+		</tr>
+		<tr>
+			<td class = "heading">Height</td>
+			<td>370mm (320s)</td>
+		</tr>
+		<tr>
+			<td class = "heading">Active</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		</tr>
+</div>
+
+<table class="profile-mobile events not-pc"><!--Trixie-->
+		<tr>
+			<td class = "heading">Nbr</td>
+			<td>R289</td>
+		</tr>
+		<tr>
+			<td class = "heading">Pet Name</td>
+			<td>Trixie</td>
+		</tr>
+		<tr>
+			<td class = "heading">Reg Name</td>
+			<td>Trixie</td>
+		</tr>
+		<tr>
+			<td class = "heading">Breed</td>
+			<td>Kelpie</td>
+		</tr>
+		<tr>
+			<td class = "heading">DOB</td>
+			<td>31/1/2015</td>
+		</tr>
+		<tr>
+			<td class = "heading">Height</td>
+			<td>481mm (500s)</td>
+		</tr>
+		<tr>
+			<td class = "heading">Active</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		</tr>
+		
+		
+<table class="profile-mobile events not-pc"><!--Poppy-->
+		<tr>
+			<td class = "heading">Nbr</td>
+			<td>S346</td>
+		</tr>
+		<tr>
+			<td class = "heading">Pet Name</td>
+			<td>Poppy</td>
+		</tr>
+		<tr>
+			<td class = "heading">Reg Name</td>
+			<td>Poppy</td>
+		</tr>
+		<tr>
+			<td class = "heading">Breed</td>
+			<td>Huntaway X</td>
+		</tr>
+		<tr>
+			<td class = "heading">DOB</td>
+			<td>4/5/2016</td>
+		</tr>
+		<tr>
+			<td class = "heading">Height</td>
+			<td>600+mm (600s)</td>
+		</tr>
+		<tr>
+			<td class = "heading">Active</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		</tr>
+		
+		<table class="profile-mobile events not-pc"><!--Murphy-->
+		<tr>
+			<td class = "heading">Nbr</td>
+			<td>I389</td>
+		</tr>
+		<tr>
+			<td class = "heading">Pet Name</td>
+			<td>Murphy</td>
+		</tr>
+		<tr>
+			<td class = "heading">Reg Name</td>
+			<td>Glentrieve It's Raining Men</td>
+		</tr>
+		<tr>
+			<td class = "heading">Breed</td>
+			<td>Golden Retriever</td>
+		</tr>
+		<tr>
+			<td class = "heading">DOB</td>
+			<td>31/12/2006</td>
+		</tr>
+		<tr>
+			<td class = "heading">Height</td>
+			<td>600+mm (600s)</td>
+		</tr>
+		<tr>
+			<td class = "heading">Active</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		</tr>
+		
+		<table class="profile-mobile events not-pc"><!--Lucy-->
+		<tr>
+			<td class = "heading">Nbr</td>
+			<td>B389</td>
+		</tr>
+		<tr>
+			<td class = "heading">Pet Name</td>
+			<td>Lucy</td>
+		</tr>
+		<tr>
+			<td class = "heading">Reg Name</td>
+			<td>Lucy Goose</td>
+		</tr>
+		<tr>
+			<td class = "heading">Breed</td>
+			<td>BC X</td>
+		</tr>
+		<tr>
+			<td class = "heading">DOB</td>
+			<td>2/12/1999</td>
+		</tr>
+		<tr>
+			<td class = "heading">Height</td>
+			<td>600+mm (600s)</td>
+		</tr>
+		<tr>
+			<td class = "heading">Active</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><button class = "w3-center button-small">EDIT INFO</button></td>
+			<td><button class = "w3-center button-small">VIEW RESULTS</button></td>
+		</tr>
+				<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionProfile() {
+  document.getElementById("myDropdownProfile").classList.toggle("show");
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionEvents() {
+  document.getElementById("myDropdownEvents").classList.toggle("show");
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunctionOther() {
+  document.getElementById("myDropdownOther").classList.toggle("show");
+}
+
+</script>
+
+  </body>
+  
+</html>
+
